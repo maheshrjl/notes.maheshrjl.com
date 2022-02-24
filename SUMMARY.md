@@ -6,3 +6,4 @@
 * [💻 Linux](linux/README.md)
   * [🔍 Find stuff in Linux](linux/find-stuff-in-linux.md)
   * [🔎 Replace text in Files](linux/replace-text-in-files.md)
+  * [🗜 Processes](linux/processes.md)
