@@ -8,21 +8,20 @@ description: 'ps styles: -unix style; BSD style without dash; --GNU style;'
 
 **Syntax: ps -\[options]**
 
-| Options | Description                                                                                        |
-| :-----: | -------------------------------------------------------------------------------------------------- |
-|    -a   | All users                                                                                          |
-|    -u   |  list the user who started the process or when -u user is specified list the process for that user |
-|    -x   | Processes not executed by current terminal                                                         |
-|    -e   | List all processes regardless of the terminal; alt: -A                                             |
-|    -H   | Display parent child relationship                                                                  |
-|   -j    | Jobs format                                                                                        |
-|    -f   | Format                                                                                             |
+|  -a | All users                                                                                         |
+| :-: | ------------------------------------------------------------------------------------------------- |
+|  -u | list the user who started the process or when -u user is specified list the process for that user |
+|  -x | Processes not executed by current terminal                                                        |
+|  -e | List all processes regardless of the terminal; alt: -A                                            |
+|  -H | Display parent child relationship                                                                 |
+|  -j | Jobs format                                                                                       |
+|  -f | Format                                                                                            |
 
 #### Useful ps variations:
 
-* &#x20;**ps axjf:** Show process relationship
+* **ps axjf:** Show process relationship
 * **ps aux:** Show username, pid, cpu & memory, start date, & also the command that started the process.
-* &#x20;**pgrep \[process]:** Get PID without using ps | grep \[process]
+* **pgrep \[process]:** Get PID without using ps | grep \[process]
 
 ### **Foreground process**
 
