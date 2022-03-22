@@ -1,6 +1,6 @@
 # 🐚 bash-shell
 
-### Bash Nav Shortcuts:
+### <mark style="color:green;">Bash Nav Shortcuts:</mark>
 
 `Ctrl`+`U`- Cut everything to the left &#x20;
 

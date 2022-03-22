@@ -6,3 +6,22 @@ coverY: 0
 
 # 💻 Linux
 
+{% content-ref url="find-replace.md" %}
+[find-replace.md](find-replace.md)
+{% endcontent-ref %}
+
+{% content-ref url="files.md" %}
+[files.md](files.md)
+{% endcontent-ref %}
+
+{% content-ref url="ps.md" %}
+[ps.md](ps.md)
+{% endcontent-ref %}
+
+{% content-ref url="bash-shell.md" %}
+[bash-shell.md](bash-shell.md)
+{% endcontent-ref %}
+
+{% content-ref url="vi.md" %}
+[vi.md](vi.md)
+{% endcontent-ref %}

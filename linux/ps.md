@@ -2,9 +2,9 @@
 description: 'ps styles: -unix style; BSD style without dash; --GNU style;'
 ---
 
-# 🗜 Processes
+# 🗜 processes
 
-### PS Options
+### <mark style="color:blue;">PS Options</mark>
 
 **Syntax: ps -\[options]**
 
@@ -17,13 +17,17 @@ description: 'ps styles: -unix style; BSD style without dash; --GNU style;'
 |  -j | Jobs format                                                                                       |
 |  -f | Format                                                                                            |
 
+{% hint style="info" %}
+See which program this port belongs to: `lsof -i tcp:80`
+{% endhint %}
+
 #### Useful ps variations:
 
 * **ps axjf:** Show process relationship
 * **ps aux:** Show username, pid, cpu & memory, start date, & also the command that started the process.
 * **pgrep \[process]:** Get PID without using ps | grep \[process]
 
-### **Foreground process**
+### <mark style="color:purple;">**Foreground process**</mark>
 
 |    ctrl+c    | Kill a foreground process \[SIGINT] stands for sig-interrupt |
 | :----------: | ------------------------------------------------------------ |
@@ -32,7 +36,7 @@ description: 'ps styles: -unix style; BSD style without dash; --GNU style;'
 
 **Note: To check sleeping process use jobs command.**
 
-### **Background process**
+### <mark style="color:orange;">**Background process**</mark>
 
 |       &      | Execute a process in background. Appended at the end of command or script |
 | :----------: | ------------------------------------------------------------------------- |
@@ -41,14 +45,19 @@ description: 'ps styles: -unix style; BSD style without dash; --GNU style;'
 
 **Note: To check sleeping process use jobs command.**
 
-### **Killing a process**
+### <mark style="color:red;">**Killing a process**</mark>
 
 **kill \[kill-signal] \[pid]**
 
 Using a kill command sends a kill signal: List all kill signals: kill -l. SIGTERM is the default kill signal
 
-|   kill  | SIGTERM \[Kill a process nicely, process can refuse this] |
-| :-----: | --------------------------------------------------------- |
-| kill -9 | SIGKILL \[Kill forcefully]                                |
+|        kill       | SIGTERM \[Kill a process nicely, process can refuse this] |
+| :---------------: | --------------------------------------------------------- |
+|      kill -9      | SIGKILL \[Kill forcefully]                                |
+| fuser -k filename | Kill a process that is ocking a file                      |
 
 Killing with process name: **pkill \[kill-signal] \[name]**
+
+{% hint style="info" %}
+Kill a process running in port: `kill -9 $(lsof -t -i:8080)`
+{% endhint %}

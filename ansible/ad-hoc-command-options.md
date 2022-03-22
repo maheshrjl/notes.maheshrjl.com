@@ -1,6 +1,6 @@
 # 🔏 Ad-Hoc Command Options
 
-### Ad-Hoc Options
+### <mark style="color:blue;">Ad-Hoc Options</mark>
 
 Syntax: **`ansible -i [inventory] [server group] -m [module] -u [user]`**
 
@@ -22,7 +22,7 @@ If module is not specified with -m **ansible defaults to the command module** fo
 
 * Eg: `ansible all -m shell -a "command | grep text"`
 
-### **Polling & running in Background:** <a href="#backgroundtasks" id="backgroundtasks"></a>
+### <mark style="color:purple;">**Polling & running in Background:**</mark> <a href="#backgroundtasks" id="backgroundtasks"></a>
 
 * **`-p 0`** Specify a polling time in seconds. Ansible will run the command in the background and check in the specified time if that command has executed.`0 = polling disabled`
 

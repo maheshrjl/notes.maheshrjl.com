@@ -2,7 +2,7 @@
 
 **Syntax: ansible-playbook -i \[inventory] \[Options]**
 
-### Playbook Options <a href="#playbookoptions" id="playbookoptions"></a>
+### <mark style="color:blue;">Playbook Options</mark> <a href="#playbookoptions" id="playbookoptions"></a>
 
 |         Options        | Description                                                                                                    |
 | :--------------------: | -------------------------------------------------------------------------------------------------------------- |

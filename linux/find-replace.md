@@ -1,6 +1,6 @@
 # 🔍 find & replace
 
-### Find text in files:
+### <mark style="color:blue;">Find text in files:</mark>
 
 `grep '^.' filename` - Get all lines that start with a dot or period
 
@@ -26,7 +26,7 @@ Along with these, `--exclude`, `--include`, `--exclude-dir` flags could be used 
 
 `grep --exclude-dir={dir1,dir2,*.dst} -rnw '/path/to/somewhere/' -e "pattern"`
 
-### Find based on file content
+### <mark style="color:purple;">Find based on file content</mark>
 
 `find . -type f -exec grep "forinstance" '{}' ; -print`&#x20;
 
