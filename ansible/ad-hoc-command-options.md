@@ -1,8 +1,3 @@
----
-cover: ../.gitbook/assets/A.jpg
-coverY: 1.3816925734024181
----
-
 # 🔏 Ad-Hoc Command Options
 
 ### Ad-Hoc Options

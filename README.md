@@ -1,7 +1,7 @@
 ---
 description: 'Ansible Ad-Hoc command cheat sheet:'
 cover: .gitbook/assets/A.jpg
-coverY: 178.23834196891193
+coverY: 222.41012111001623
 ---
 
 # 🔄 Ansible
