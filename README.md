@@ -1,5 +1,5 @@
 ---
-layout: editorial
+layout: landing
 ---
 
 # 👨💼 Maheshrjl's Notes
