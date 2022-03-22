@@ -1,16 +1,20 @@
 # 🐚 bash-shell
 
-### <mark style="color:green;">Bash Nav Shortcuts:</mark>
+### <mark style="color:green;">Cut & Paste in Bash</mark>
 
 `Ctrl`+`U`- Cut everything to the left &#x20;
 
 `Ctrl`+`W`- Cut one word to the left
 
+`Ctrl`+`k` - Cut everything to the right
+
+`Alt`+`d`- Cut one word to the right
+
 `Ctrl`+`Y`- Paste a line cut with Ctrl+U&#x20;
 
-`Ctrl`+`L`- Clear the screen and redraw the current line&#x20;
+### Moving cursor
 
-`Ctrl`+`G`- Get a new line and abandon the current one
+`Ctrl`+`L`- Clear the screen and redraw the current line&#x20;
 
 `Ctrl`+`R`- Reverse search history
 
