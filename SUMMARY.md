@@ -5,7 +5,7 @@
   * [ℹ Playbook Options](ansible/playbook-options.md)
 * [💻 Linux](linux/README.md)
   * [🔍 find & replace](linux/find-replace.md)
-  * [🔎 file-operations](linux/files.md)
+  * [🔎 file & dir operations](linux/files.md)
   * [🗜 processes](linux/ps.md)
   * [🐚 bash-shell](linux/bash-shell.md)
   * [📼 vi-editor](linux/vi.md)

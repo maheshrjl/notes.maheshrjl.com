@@ -2,9 +2,13 @@
 description: pfft! files in linux
 ---
 
-# 🔎 file-operations
+# 🔎 file & dir operations
+
+### Creating files
 
 `> file.txt` - Empty `file.txt` or create a new file
+
+### Storage Usage
 
 `du -h --max-depth=1` - Show the size of all sub folders in the current directory
 

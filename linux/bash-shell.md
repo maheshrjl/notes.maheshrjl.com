@@ -1,6 +1,6 @@
 # 🐚 bash-shell
 
-### Nav Shortcuts:
+### Bash Nav Shortcuts:
 
 `Ctrl`+`U`- Cut everything to the left &#x20;
 
@@ -22,7 +22,7 @@
 
 `Ctrl`+`E`- Go to the end of a line
 
-### <mark style="color:purple;">Command Execution:</mark>
+### <mark style="color:purple;">Bash Command Execution:</mark>
 
 `#!/usr/bin/sudo /bin/bash` - Execute entire shell script as sudo (This line replaces shabang line in shell script
 
@@ -32,7 +32,7 @@
 
 `&lt;space>command` - Execute a command without saving it in history
 
-### <mark style="color:yellow;">Spelling errors in command</mark>
+### <mark style="color:yellow;">Spelling errors bash</mark>&#x20;
 
 `!!:gs/foo/bar` <mark style="color:yellow;"></mark> - run the previous command, replace every foo with bar
 

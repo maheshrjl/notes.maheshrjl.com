@@ -2,7 +2,7 @@
 
 `:w !sudo tee %`  -  Save a file that is opened without sudo
 
-### Navigation
+### VI Navigation
 
 `$` -  Positions cursor at end of line
 
@@ -12,13 +12,13 @@
 
 `b` - back one word&#x20;
 
-### Deletion commands
+### Deletion commands VI
 
 `dd` - Delete current line
 
 _`n`_`dd` - Delete _n_ lines of buffer
 
-### Undo
+### Undo VI
 
 `u` - Undo last change
 
@@ -26,7 +26,7 @@ _`n`_`dd` - Delete _n_ lines of buffer
 
 
 
-### Search & Replace
+### Search & Replace in VI
 
 Syntax: `:[address]s/old_text/new_text/`
 
@@ -44,7 +44,7 @@ Syntax: `:[address]s/old_text/new_text/`
 
 </details>
 
-### Parameters
+### VI Parameters
 
 `:set number` - Show line numbers
 
