@@ -3,7 +3,7 @@ description: I write notes here!
 layout: landing
 ---
 
-# 👨💼 Welcome!
+# 👋 Welcome!
 
 {% content-ref url="README (1).md" %}
 [README (1).md](<README (1).md>)
