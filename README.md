@@ -5,8 +5,8 @@ layout: landing
 
 # 👋 Welcome!
 
-{% content-ref url="README (1).md" %}
-[README (1).md](<README (1).md>)
+{% content-ref url="ansible/" %}
+[ansible](ansible/)
 {% endcontent-ref %}
 
 {% content-ref url="linux/" %}
