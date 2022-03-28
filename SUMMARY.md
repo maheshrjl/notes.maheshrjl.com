@@ -10,3 +10,4 @@
   * [🗜 processes](linux/ps.md)
   * [🐚 bash-shell](linux/bash-shell.md)
   * [📼 vi-editor](linux/vi.md)
+* [🔬 Terraform](terraform.md)
