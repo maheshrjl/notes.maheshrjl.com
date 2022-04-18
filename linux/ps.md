@@ -59,5 +59,8 @@ Using a kill command sends a kill signal: List all kill signals: kill -l. SIGTER
 Killing with process name: **pkill \[kill-signal] \[name]**
 
 {% hint style="info" %}
-Kill a process running in port: `kill -9 $(lsof -t -i:8080)`
+Kill a process running in port:&#x20;
+
+* `sudo kill -9 $(lsof -t -i:8080)`
+* `sudo fuser -k 8770/tcp`&#x20;
 {% endhint %}
