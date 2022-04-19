@@ -26,3 +26,11 @@ Install terraform autocomplete - \`**`` terraform -install-autocomplete` ``**
 {% hint style="info" %}
 Useful when we need to execute provisioners because terraform doesn't detect changes in provisionders. `terraform taint` was the command in old version
 {% endhint %}
+
+### Terraform Providers
+
+* `terraform providers` - Get a list of currently installed providers
+
+{% hint style="info" %}
+Use alternate provider by setting an alias & refer the provider with `provider = alias`
+{% endhint %}
