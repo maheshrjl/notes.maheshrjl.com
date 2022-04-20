@@ -1,6 +1,5 @@
 ---
 description: I write notes here!
-layout: landing
 ---
 
 # 👋 Welcome!
@@ -11,4 +10,8 @@ layout: landing
 
 {% content-ref url="linux/" %}
 [linux](linux/)
+{% endcontent-ref %}
+
+{% content-ref url="terraform.md" %}
+[terraform.md](terraform.md)
 {% endcontent-ref %}
