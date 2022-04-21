@@ -34,3 +34,7 @@ Useful when we need to execute provisioners because terraform doesn't detect cha
 {% hint style="info" %}
 Use alternate provider by setting an alias & refer the provider with `provider = alias`
 {% endhint %}
+
+### Visualization & Graph
+
+* `terraform graph | dot -Tsvg > graph.svg` - Output visual execution graph of terraform resources in svg format&#x20;
