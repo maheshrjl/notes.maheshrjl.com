@@ -8,7 +8,14 @@
 
 ### s3
 
-`aws s3 rb s3://bucket-name –force` - Delete s3 bucket with all of it's contents
+Delete s3 bucket with all of it's contents
+
+```
+aws s3 rb s3://bucket-name –force
+```
+
+\
+
 
 
 
