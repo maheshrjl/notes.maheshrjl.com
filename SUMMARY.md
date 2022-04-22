@@ -4,6 +4,8 @@
 * [🔄 Ansible](ansible/README.md)
   * [🔏 Ad-Hoc Command Options](ansible/ad-hoc-command-options.md)
   * [ℹ Playbook Options](ansible/playbook-options.md)
+* [🌐 AWS](aws/README.md)
+  * [📋 AWS CLI Commands](aws/aws-cli-commands.md)
 * [💻 Linux](linux/README.md)
   * [🔍 find & replace](linux/find-replace.md)
   * [🔎 file & dir operations](linux/files.md)
