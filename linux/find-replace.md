@@ -30,3 +30,26 @@ Along with these, `--exclude`, `--include`, `--exclude-dir` flags could be used 
 
 `find . -type f -exec grep "forinstance" '{}' ; -print`&#x20;
 
+### <mark style="color:orange;">Find SUID/GUID and Sticky bit Files</mark>
+
+`find . -perm /4000` - SUID
+
+`find . -perm /2000` - GUID
+
+`find . -perm /1000` - Sticky Bit
+
+`find . -perm /6000` - Search for both SUID & GUID
+
+### Find files based on modified time
+
+`find -mmin 5` - Find files modified exactly 5 minute ago (In that minute only)
+
+`find -mmin -5` - List all files modified in the last 5 minutes
+
+`find -mmin +5` - Find all files modified more than 5 minutes ago
+
+{% hint style="info" %}
+`mtime` is used to find files modified more than 24 hours ago, `ctime` can be used to search by file change times, `size` can also be used.&#x20;
+
+Operators like -o for or and -not can also be used (and is the default operator)
+{% endhint %}

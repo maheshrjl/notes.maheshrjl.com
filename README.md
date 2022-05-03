@@ -8,6 +8,10 @@ description: I write notes here!
 [ansible](ansible/)
 {% endcontent-ref %}
 
+{% content-ref url="aws/" %}
+[aws](aws/)
+{% endcontent-ref %}
+
 {% content-ref url="linux/" %}
 [linux](linux/)
 {% endcontent-ref %}
