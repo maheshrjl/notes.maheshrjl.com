@@ -1,14 +1,14 @@
-# 📋 AWS CLI Commands
+# 📋 CLI Commands
 
-### ec2&#x20;
+### EC2
 
 `aws ec2 describe-instances` - List all ec2 instances
 
-### iAM
+### IAM
 
 List all iam users - `aws iam list-users`
 
-### s3
+### S3
 
 Delete s3 bucket with all of it's contents :
 

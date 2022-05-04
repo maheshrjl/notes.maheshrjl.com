@@ -1,8 +1,8 @@
 ---
-description: I write notes here!
+description: I write notes here. Read about Linux, AWS, Ansible and Terraform. 👇
 ---
 
-# 👋 Welcome!
+# 👋 Welcome! 🙂
 
 {% content-ref url="ansible/" %}
 [ansible](ansible/)
