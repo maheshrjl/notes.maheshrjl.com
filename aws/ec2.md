@@ -22,6 +22,17 @@
 * Best for jobs that can be terminated at any time eg: batch processing
 * Not charged for partial hour if terminated by AWS but, charged for full hour if user terminated
 
+<details>
+
+<summary>Spot Instances &#x26; Spot Fleet</summary>
+
+#### EC2 Spot Instance Request:
+
+* Can get a discount of 90% compared to on-demand
+* Define a max spot price & get the instance while current spot price  < max
+
+</details>
+
 #### Reserved instance:
 
 * Fixed compute, resverved for a certain period of time. Cheaper than on-demand if used for predicatable long term. (1 or 3 years)
