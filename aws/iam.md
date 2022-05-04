@@ -1,6 +1,6 @@
 # 🆔 IAM
 
-## IAM user group:
+## IAM user group
 
 Groups let us specify permission for multiple users. `Identity based policies` can be attached to a group
 
@@ -55,7 +55,7 @@ Policies that are added to single user, group or role. Maintain a strict one-to-
 * Access Control List (ACL):
 * Session Policies:
 
-## IAM Security Tools:
+## IAM Security Tools
 
 #### IAM Credential Report (Account Level):
 
