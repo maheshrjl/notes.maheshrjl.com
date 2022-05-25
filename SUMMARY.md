@@ -1,6 +1,6 @@
 # Table of contents
 
-* [👋 Welcome! 🙂](README.md)
+* [👋 Welcome!](README.md)
 * [🔄 Ansible](ansible.md)
 * [🌐 AWS](aws/README.md)
   * [📋 CLI Commands](aws/cli.md)
