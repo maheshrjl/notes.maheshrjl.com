@@ -1,3 +1,3 @@
-## Maheshrjl's Notes -> notes.maheshrjl.com
+## Maheshrjl's Notes [DEV]-> docs.maheshrjl.com
 
-### Experimenting with [MkDocs](https://www.mkdocs.org/) 
+### Powered by MkDocs!
