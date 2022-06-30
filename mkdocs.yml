@@ -1,36 +1,56 @@
-site_name: Maheshrjl's Notes
+site_name: Maheshrjl's docs
+site_url: https://docs.maheshrjl.com/
+site_author: Mahesh Rijal
+
 theme:
   name: material
-  palette: 
-    - media: "(prefers-color-scheme: light)" 
-      scheme: default
-      primary: white
-      toggle:
-        name: Dark mode
-        icon: material/weather-sunny
+  font:
+    text: Roboto
+    code: Fira Code
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - navigation.top
 
-    - media: "(prefers-color-scheme: dark)" 
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
       toggle:
+        icon: material/weather-sunny
         name: Light mode
-        icon: material/weather-night
-
-  font: 
-    text: Roboto
-    code: Fira Code
-
-  logo: assets/logo.png
-  favicon: assets/favicon.png
-
-  features:
-    - navigation.instant
-    - navigation.tabs
-
-nav:
-  - index.md
-  - about.md
 
 plugins:
   - search
-  - privacy
+
+extra:
+  generator: false
+  # social:
+  #   - icon: fontawesome/brands/twitter
+  #     link: https://twitter.com/maheshrjl
+
+  #   - icon: fontawesome/solid/paper-plane
+  #     link: mailto:mhs@maheshrjl.com
+
+nav:
+  - Home: "index.md"
+  - Ansible: "ansible.md"
+  - AWS: "aws.md"
+  - Linux: "linux.md"
+  - Terraform: "terraform.md"
