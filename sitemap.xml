@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://docs.maheshrjl.com/</loc>
+         <lastmod>2022-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.maheshrjl.com/ansible/</loc>
+         <lastmod>2022-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.maheshrjl.com/aws/</loc>
+         <lastmod>2022-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.maheshrjl.com/linux/</loc>
+         <lastmod>2022-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.maheshrjl.com/terraform/</loc>
+         <lastmod>2022-07-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
