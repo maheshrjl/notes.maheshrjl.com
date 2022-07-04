@@ -1,4 +1,95 @@
-# 💻 EC2
+# 🌐 AWS
+
+## AWS CLI Commands
+
+### EC2
+
+`aws ec2 describe-instances` - List all ec2 instances
+
+### IAM
+
+List all iam users - `aws iam list-users`
+
+### S3
+
+Delete s3 bucket with all of it's contents :
+
+`aws s3 rb s3://bucket-name –force`
+
+Copy file from local machine to s3
+
+`aws s3 cp MyFolder s3://bucket-name — recursive [–region us-west-2]`
+
+List <mark style="color:purple;">size</mark> & <mark style="color:purple;">contents</mark> of s3 buckets - `aws s3api list-objects --bucket BUCKETNAME --output json --query "[sum(Contents[].Size), length(Contents[])]"`
+
+## AWS IAM
+
+### IAM user group
+
+Groups let us specify permission for multiple users. `Identity based policies` can be attached to a group
+
+* IAM user group is a collection of IAM users
+* User groups can't be nested
+
+### IAM Roles
+
+Used when AWS services need to perform action on users behalf. Permissions to AWS Services are assigned with IAM Roles. Policies are attached to one principal, however, Roles can be asssumed by anyone. .
+
+Roles can be used by:
+
+* IAM user in the same AWS account as the role
+* IAM user in a different AWS account
+* A web service offered by AWS like EC2
+* An external user authenticated by an external identity provider
+
+Example Roles:
+
+* EC2 instance roles
+* Lambda function roles
+* Cloudformation roles
+
+### IAM Policy
+
+Policies are used to manage access in AWS. Policies can be attached to IAM Identities (User, Group, or roles). Policies are evaluated when an IAM Principlpe (user / role) makes a request.
+
+Policy Types:
+
+* **Identitiy based policies**: Attached to IAM identities (User/Group/Roles)
+
+<details>
+
+<summary>Managed Policies</summary>
+
+* AWS Managed Policies: Created & managed by AWS
+* Customer managed policies: Created and managed by AWS account
+
+</details>
+
+<details>
+
+<summary>Inline Policies</summary>
+
+Policies that are added to single user, group or role. Maintain a strict one-to-one relationship between a policy & entity. They are deleted when you delete the idenitity.&#x20;
+
+</details>
+
+* **Resource based policies**: Attached to resources
+* Permission boundaries: Defines maximum permission that identity based policies can grant to an IAM Entity (User / Role)
+* Organizations SCP:&#x20;
+* Access Control List (ACL):
+* Session Policies:
+
+### IAM Security Tools
+
+#### IAM Credential Report (Account Level):
+
+* A report that lists all account users & status of their credentials
+
+#### IAM  Access Advisor (user-level):
+
+* Shows service permissions granted to a user and when those services were last accessed
+
+## EC2
 
 ### <mark style="color:yellow;">AMI</mark>
 
@@ -139,3 +230,52 @@ Planning in advance for capacity
 * Capacity access is immediate i.e. billed as soon as it starts
 * AZ, number of instances & intance type/os must be specified
 * Can be combined with reserved instances for cost saving
+
+
+
+## EC2 Storage
+
+### Instance Store
+
+* Instance store are hardware device  (physical connection) connected directly to Ec2 instance
+* Better I/O performance compared to EBS Volume
+* Instance Store are ephemeral i.e. Loose data if they are stopped
+* Use case: Good for buffer/cache/temporary data
+* Risk of data loss if hardware (EC2 instance) fails
+
+### EBS Volume
+
+* Elastic Block Store (EBS) is block level storage device attached to EC2 instance
+* EBS volume persist data even after instance termination (Unless delete on termination is set)
+* EBS can be mounted to 1 instance at a time
+* Volumes are bound to specific (Cannot be attached to instance in another AZ)
+* It's a network drive (Not a physical drive)
+* Capacity & IOPS must be provisioned in advance&#x20;
+
+#### Types of EBS Volume
+
+Amazon EBS volume types are broken into two main categories:&#x20;
+
+* **SSD-backed volumes** are optimized for IOPS, which are best for workloads involving frequent read/write operations with small I/O size.
+* **HDD-backed volumes** are optimized for throughput (measured in MiB/s) for large streaming workloads. Cannot include boot volumes.
+
+Within each of those groups are two options. The default type is General Purpose SSD (gp2), and there are 3 others available:
+
+* **General Purpose SSD (gp2) – general purpose, balances price and performance.**
+  * **Use cases:** Most workloads such as virtual desktops, dev and test environments, and low-latency interactive apps.
+* **Provisioned IOPS SSD (io1)** – highest-performance SSD volume for mission-critical low-latency or high-throughput workloads that require sustained IOPS performance, or more than 16,000 IOPS or 250 MiB/s of throughout per volume.
+  * **Use cases:** Mission-critical applications, large database workloads such as MongoDB, Microsoft SQL Server, Cassandra, Oracle, MySQL, and PostgreSQL
+* **Throughput Optimized HDD (st1)** – low-cost HDD volume for frequently accessed workloads with high throughput.
+  * **Use cases:** Streaming workloads, big data, data warehouses, log processing.
+* **Cold HDD (sc1)** – _lowest_ cost HDD volume for less-frequently accessed workloads
+  * **Use cases:** Throughput-oriented storage for large volumes of data that is infrequently accessed
+
+{% hint style="info" %}
+Only gp2/gp3 & io1/io2 can be used as boot volumes
+{% endhint %}
+
+### EBS Snapshot
+
+* Creating a backup (snapshot) of EBS volume
+* Not necessary to detach volume but recommended
+* Snapshot can by copied across AZ & Region

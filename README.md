@@ -11,8 +11,8 @@ coverY: 0
 [ansible.md](ansible.md)
 {% endcontent-ref %}
 
-{% content-ref url="aws/" %}
-[aws](aws/)
+{% content-ref url="aws.md" %}
+[aws.md](aws.md)
 {% endcontent-ref %}
 
 {% content-ref url="linux.md" %}
