@@ -7,8 +7,8 @@ coverY: 0
 
 # 👋 Welcome!
 
-{% content-ref url="ansible/" %}
-[ansible](ansible/)
+{% content-ref url="ansible.md" %}
+[ansible.md](ansible.md)
 {% endcontent-ref %}
 
 {% content-ref url="aws.md" %}

@@ -1,6 +1,7 @@
 # 🐬 Ansible Snippets
 
-{% code title="Disable pipelining when requiretty enablederett" %}
+#### Disable pipelining when requiretty is enabled
+
 ```yaml
 - lineinfile:
     dest: /etc/sudoers
@@ -10,4 +11,4 @@
   vars:yam
       ansible_ssh_pipelining: no
 ```
-{% endcode %}
+
