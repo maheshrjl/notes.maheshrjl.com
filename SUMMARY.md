@@ -1,7 +1,8 @@
 # Table of contents
 
 * [👋 Welcome!](README.md)
-* [🔄 Ansible](ansible.md)
+* [🔄 Ansible](ansible/README.md)
+  * [🐬 Ansible Snippets](ansible/ansible-snippets.md)
 * [🌐 AWS](aws.md)
 * [🚀 Docker](docker.md)
 * [💻 Linux](linux.md)
