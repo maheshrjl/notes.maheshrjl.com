@@ -8,7 +8,7 @@
     line: 'Defaults requiretty'
     state: absent
   sudo_user: root
-  vars:yam
+  vars:
       ansible_ssh_pipelining: no
 ```
 
