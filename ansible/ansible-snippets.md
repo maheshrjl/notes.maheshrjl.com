@@ -1,6 +1,6 @@
 # 🐬 Ansible Snippets
 
-#### Disable pipelining when requiretty is enabled
+#### Remove tty requirements with ssh\_pipelining disabled
 
 ```yaml
 - lineinfile:
