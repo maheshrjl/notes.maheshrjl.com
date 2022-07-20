@@ -4,7 +4,7 @@ description: 'Ansible Ad-Hoc command cheat sheet:'
 
 # 🔄 Ansible
 
-## <mark style="color:blue;">Ad-Hoc Commands</mark>
+## Ad-Hoc Commands
 
 Syntax: **`ansible -i [inventory] [server group] -m [module] -u [user]`**
 
@@ -18,34 +18,33 @@ Syntax: **`ansible -i [inventory] [server group] -m [module] -u [user]`**
 |    -u   | Specify a username Eg: `-u mhs`                                                                                               |
 | --limit | Limits the host, command will not execute on the ip marked with limit. Also, supports regex for ip. Eg: `"ip1,ip2"`           |
 
-#### Notes:
-
+{% hint style="info" %}
 If module is not specified with -m **ansible defaults to the command module** for ad-hoc commands
 
-**Command module doesn't support `|` & redirection**, use `-m shell` module
+* **Command module doesn't support `|` & redirection**, use `-m shell` module
 
-* Eg: `ansible all -m shell -a "command | grep text"`
+Eg: `ansible all -m shell -a "command | grep text"`
+{% endhint %}
 
-### <mark style="color:purple;">**Polling & Background jobs**</mark> <a href="#backgroundtasks" id="backgroundtasks"></a>
+### Polling & Background jobs <a href="#backgroundtasks" id="backgroundtasks"></a>
 
-* **`-p 0`** Specify a polling time in seconds. Ansible will run the command in the background and check in the specified time if that command has executed.`0 = polling disabled`
+**`-p 0`** Specify a polling time in seconds. Ansible will run the command in the background and check in the specified time if that command has executed.`0 = polling disabled`
 
-Eg: **`ansible all -B 1800 -P 60 -a "/usr/bin/long_running_operation --do-stuff"`**
-
+* Eg: **`ansible all -B 1800 -P 60 -a "/usr/bin/long_running_operation --do-stuff"`**
 * This job runs for 30 minutes with polls every minute
-* `-B` Specify time limit for the job to run in background.
 
-Eg: **`ansible all -B 3600 -P 0 -a "/usr/bin/long_running_operation --do-stuff"`**
+`-B` Specify time limit for the job to run in background.
 
+* Eg: **`ansible all -B 3600 -P 0 -a "/usr/bin/long_running_operation --do-stuff"`**
 * This job runs for 3600 seconds without polling
 
 > **Note:** A result file is printed in output which gives a job ID. Check the result of the job using **`ansible all -m async_status -a "jid=jobid"`**
 
 * Job ID is unique to each server.
 
-## <mark style="color:blue;">Playbook Options</mark> <a href="#playbookoptions" id="playbookoptions"></a>
+## Playbook Options <a href="#playbookoptions" id="playbookoptions"></a>
 
-**Syntax: ansible-playbook -i \[inventory] \[Options]**
+**Syntax: `ansible-playbook -i [inventory] [Options]`**
 
 |         Options        | Description                                                                                                    |
 | :--------------------: | -------------------------------------------------------------------------------------------------------------- |
