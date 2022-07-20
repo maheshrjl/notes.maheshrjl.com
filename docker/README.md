@@ -1,30 +1,20 @@
 # 🚀 Docker
 
-Docker client/engine version
+`docker version` - Docker client/engine version
 
-```
-docker version
-```
+`docker info` - Show docker engine configuration (info about containers & images)
 
-#### Docker engine configs
-
-Shows information about containers & images as well
-
-```
-docker info
-```
-
-#### Docker CLI structure
+### Docker CLI structure
 
 * Old: `docker <command> (options)`
 * New: `docker <command> <sub-command> (options)`
 
-#### Isolation mode for windows containers
+### Isolation mode for windows containers
 
 * `process isolation`: multiple container instances run concurrently on a given host sharing the same kernel with the host as well as each other. Same as how Linux containers run.
 * `Hyper-V isolation`: Offers enhanced security and broader compatibility between host and container versions. With Hyper-V isolation, multiple container instances run concurrently on a host; however, each container runs inside of a highly optimized virtual machine and effectively gets its own kernel. The presence of the virtual machine provides hardware-level isolation between each container as well as the container host.
 
-### Getting a Shell Inside a Container
+### Shell Inside a Container
 
 `docker exec -it <container name> /bin/bash` execute a bash shell in the container
 
@@ -82,10 +72,10 @@ List all containers: `docker container ls -a`
 
 #### Getting a shell inside a container
 
-* Start a new container interactively (ontainer will stop when the shell/command is terminated): `docker container run -it`
-* Run a command inside exisiting container: `docker container exec -it`
+* `docker container run -it` - Start a new container interactively (container will stop when the shell/command is terminated)
+* `docker container exec -it` - Run a command inside exisiting container
 
-#### Cleanup
+#### Docker Cleanup
 
 * To clean an unused/dangling image: `Docker image prune`
 * To remove an image that is not used in a container: `Docker image prune -a`

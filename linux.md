@@ -1,6 +1,6 @@
 # 💻 Linux
 
-## <mark style="color:blue;">Finding text in Files</mark>
+## <mark style="color:blue;">Find text in Files</mark>
 
 `grep '^.' filename` - Get all lines that start with a dot or period
 
@@ -149,7 +149,7 @@ Kill a process running in port:&#x20;
 
 `Ctrl`+`Y`- Paste a line cut with Ctrl+U&#x20;
 
-### Moving cursor
+### Cursor movement in Bash
 
 `Ctrl`+`L`- Clear the screen and redraw the current line&#x20;
 
@@ -179,25 +179,35 @@ Kill a process running in port:&#x20;
 
 `^ehco^echo` - Run the previous command, replace first occurence of echo with echo
 
-## VI Editor
+## VI Editor <a href="#vi" id="vi"></a>
 
 `:w !sudo tee %`  -  Save a file that is opened without sudo
 
 ### <mark style="color:blue;">VI Navigation</mark>
 
-`$` -  Positions cursor at end of line
+`gg` Begning of the file
 
-`^` -  Positions cursor at beginning of line
+`G` Move to the last line in the file
 
-`w` - One word forward
+`5G` Move to line 5 of the file (5 can be any line number)
 
-`b` - back one word&#x20;
+`H` Upper left corner (home) of the current screen
 
-`gg` - Go to first line in file
+`M` Middle line
 
-`G` - Go to last line in file
+`L` Lower left corner
 
-### <mark style="color:orange;">Append in VI</mark>
+`^` Beginning of line
+
+`$` End of line
+
+`l` Forward a character
+
+`w` One word forward
+
+`b` Back one word
+
+### <mark style="color:orange;">Input/Append in VI</mark>
 
 `a` - Append after the cursor
 
@@ -211,17 +221,19 @@ Kill a process running in port:&#x20;
 
 `O` - Create new line above the cursor
 
-### <mark style="color:green;">Deletion commands VI</mark>
+### <mark style="color:yellow;">VI Commands</mark>
+
+`u` - Undo last change
+
+`U` - Undo all changes on line
+
+`:w !sudo tee %`  -  **Save a file that is opened without sudo**
 
 `dd` - Delete current line
 
 _`n`_`dd` - Delete _n_ lines of buffer
 
-### <mark style="color:yellow;">Undo VI</mark>
-
-`u` - Undo last change
-
-`U` - Undo all changes on line
+`%d` - Delete all lines in a file
 
 ### <mark style="color:purple;">Search & Replace in VI</mark>
 
@@ -252,3 +264,11 @@ Syntax: `:[address]s/old_text/new_text/`
 `:set number` - Show line numbers
 
 `:set list` - Show invisible characters
+
+## WSL2
+
+`wsl.exe -d wsl-vpnkit service wsl-vpnkit start` - WSL2 with Cisco AnyConnect
+
+`wsl -t Ubuntu` -  Shutdown WSL&#x20;
+
+`wsl --shutdown` - Shutdown all WSL distros
